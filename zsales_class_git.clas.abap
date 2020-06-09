@@ -67,9 +67,9 @@ CLASS ZSALES_CLASS_GIT IMPLEMENTATION.
     IF it_vbeln IS NOT INITIAL.
       SELECT vbeln,
              posnr,
-             matnr,
-             charg,
-             werks
+             matnr
+*             charg,
+*             werks
 *             matkl " Changes done as part of Change request #123
         FROM vbap ##DB_FEATURE_MODE[TABLE_LEN_MAX1]
         INTO TABLE @gt_vbap
